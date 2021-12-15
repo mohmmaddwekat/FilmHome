@@ -11,13 +11,13 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
@@ -33,21 +33,21 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
+-   **[Vehikl](https://vehikl.com/)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Cubet Techno Labs](https://cubettech.com)**
+-   **[Cyber-Duck](https://cyber-duck.co.uk)**
+-   **[Many](https://www.many.co.uk)**
+-   **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+-   **[DevSquad](https://devsquad.com)**
+-   **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+-   **[OP.GG](https://op.gg)**
+-   **[CMS Max](https://www.cmsmax.com/)**
+-   **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+-   **[Lendio](https://lendio.com)**
+-   **[Romega Software](https://romegasoftware.com)**
 
 ## Contributing
 
@@ -64,3 +64,111 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Command
+
+> Create Class
+
+1. to make model, migration and controller and factory all in one command
+
+```
+ php artisan make:model Modelname -crmf
+```
+
+2. to make only Model Class
+
+```
+ php artisan make:model Modelname
+```
+
+3. to make only Controller Class
+
+```
+ php artisan make:Controller Controllername
+```
+
+4. to make only migration Class
+
+```
+ php artisan make:migration Migrationname
+```
+
+5.to make only factory Class
+
+```
+ php artisan make:factory Factoryname
+```
+
+6. to make only seeder Class
+
+```
+ php artisan make:seeder Seedername
+```
+
+7. to make only middleware Class
+
+```
+ php artisan make:middleware Middlewarename
+```
+
+8. to make only rule Class
+
+```
+ php artisan make:rule Rulename
+```
+
+8. to make only exception Class
+
+```
+ php artisan make:exception Exceptionname
+```
+
+9. to make only mail Class
+
+```
+ php artisan make:mail Mailname
+```
+
+10. Set the application key
+
+```
+ php artisan key:generate
+```
+
+11. Seed the database with records
+
+```
+ php artisan db:seed
+```
+
+> Running command
+
+1. Serve the application on the PHP development server
+
+```
+ php artisan serve
+```
+
+2. Run the database migrations
+
+```
+ php artisan migrate
+```
+
+3. Run the application tests
+
+```
+ php artisan test
+```
+> migrate command
+
+1. Drop all tables and re-run all migrations
+
+```
+ php artisan migrate:fresh
+```
+2. Drop all tables and re-run all migrations
+
+```
+ php artisan migrate:fresh
+```
